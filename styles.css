@@ -3,8 +3,15 @@
 }
 #x-axis {
     display: flex;
+    align-items: flex-start;
 }
 #y-axis {
     display: flex;
     flex-direction: column;
+}
+.xBox {
+    display: flex;
+    height: 40px;
+    width: 40px;
+   
 }
