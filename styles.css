@@ -1,17 +1,19 @@
 * {
-    border: 2px solid red;
+    border: 1px solid black;
 }
-#x-axis {
-    display: flex;
-    align-items: flex-start;
+/* body {
+    max-width: 1000px;
+} */
+.container{
+    display: grid;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
 }
-#y-axis {
-    display: flex;
-    flex-direction: column;
+.box {
+    /* display: flex;
+    flex-basis: content; */
+    height: 50px;
 }
-.xBox {
-    display: flex;
-    height: 40px;
-    width: 40px;
-   
+
+.drawing {
+    background-color: aqua;
 }
