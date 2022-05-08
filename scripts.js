@@ -11,7 +11,6 @@ function createGrid (gridNum) {
 
 createGrid(24)
 
-
 const boxes = document.querySelectorAll('.box');
 
 boxes.forEach((box) => {
@@ -19,4 +18,5 @@ boxes.forEach((box) => {
         box.classList.add('drawing');
     });
 })
+
 
