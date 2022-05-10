@@ -1,11 +1,10 @@
-* {
-    border: 1px solid black;
-}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: ;
 }
 .container{
     display: grid;
@@ -15,6 +14,9 @@ body {
     width: 900px;
     border: solid crimson 5px;
     border-radius: 6px;
+}
+.box {
+    border: 1px solid black;
 }
 .drawing {
     background-color: aqua;
