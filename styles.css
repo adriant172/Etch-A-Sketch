@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid black;
-}
+} */
 body {
     display: flex;
     flex-direction: column;
@@ -13,13 +13,9 @@ body {
     grid-template-rows: repeat(16, minmax(0, 1fr));
     height: 900px;
     width: 900px;
+    border: solid crimson 5px;
+    border-radius: 6px;
 }
-.box {
-    /* display: flex;
-    flex-basis: content; */
-    /* height: 50px; */
-}
-
 .drawing {
     background-color: aqua;
 }
