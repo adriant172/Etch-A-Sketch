@@ -11,21 +11,26 @@ function createGrid (gridNum) {
     let boxes = document.querySelectorAll('.box');
     boxes.forEach((box) => {
         box.addEventListener('mouseover',() =>{
-            box.classList.add('drawing');
+            let randomColors = randomRGB();
+            box.style.backgroundColor = `rgb(${randomColors[0]}, ${randomColors[1]}, ${randomColors[2]})`
+            // box.classList.add('drawing');
         });
     })
 }
 
+function randomRGB () {
+    let randomRGB = [];
+    for (let i = 0; i < 3; i++) {
+        randomRGB[i] = Math.floor(Math.random() * 255);
+    }
+    return randomRGB;
+}
 
 
 createGrid(16)
 
-// Set up hover effect so grid boxes change color upon mouseover
-
 const newGridbtn = document.querySelector('.newGrid');
 let newGridNum;
-
-
 
 newGridbtn.addEventListener('click', () => {
 
