@@ -4,9 +4,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: ;
+    background-color:deepskyblue;
 }
 .container{
+    background-color: floralwhite;
     display: grid;
     grid-template-columns: repeat(16, minmax(0, 1fr));
     grid-template-rows: repeat(16, minmax(0, 1fr));
