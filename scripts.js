@@ -51,17 +51,18 @@ function randomRGB () {
 }
 
 // Load page with default 16 by 16 grid
-createGrid(16)
+createGrid(16);
 
-const newGridbtn = document.querySelector('.newGrid');
-let newGridNum;
+const newGridBtn = document.querySelector('.newGrid');
+let currentGridNum = 16;
 
-newGridbtn.addEventListener('click', () => {
+// This will create a new grid based on the users input
+newGridBtn.addEventListener('click', () => {
 
     do {
-        newGridNum = prompt("How many squares per side would you like on your new grid ?");
-        newGridNum = parseInt(newGridNum);
-        if ( newGridNum >= 1 && newGridNum <= 100){
+        currentGridNum = prompt("How many squares per side would you like on your new grid ?");
+        currentGridNum = parseInt(currentGridNum);
+        if ( currentGridNum >= 1 && currentGridNum <= 100){
             break;
         }
     } 
@@ -69,10 +70,15 @@ newGridbtn.addEventListener('click', () => {
 
     clearGrid();
 
-    container.style.gridTemplateColumns = `repeat(${newGridNum}, minmax(0, 1fr))`;
-    container.style.gridTemplateRows = `repeat(${newGridNum}, minmax(0, 1fr))`;
-    createGrid(newGridNum);
+    container.style.gridTemplateColumns = `repeat(${currentGridNum}, minmax(0, 1fr))`;
+    container.style.gridTemplateRows = `repeat(${currentGridNum}, minmax(0, 1fr))`;
+    createGrid(currentGridNum);
     boxes = document.querySelectorAll('.box');
 })
 
-
+// This will clear and recreate the grid based on the current Grid number provided by the user
+const clearGridBtn = document.querySelector('.clearGrid');
+clearGridBtn.addEventListener('click', () => {
+    clearGrid();
+    createGrid(currentGridNum);
+});
