@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+
+h1 {
+    font-family: 'Macondo', cursive;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:skyblue;
+}
+.buttons {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+button {
+    width: 80px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: rgb(222, 229, 232);
+}
+.container{
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+    grid-template-rows: repeat(16, minmax(0, 1fr));
+    height: 900px;
+    width: 900px;
+    border: solid crimson 20px;
+    border-radius: 8px;
+}
+.box {
+    border: 1px solid black;
+}
+/* .drawing {
+    background-color: aqua;
+} */
