@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+
 h1 {
     font-family: 'Macondo', cursive;
 }
@@ -8,6 +10,17 @@ body {
     justify-content: center;
     align-items: center;
     background-color:deepskyblue;
+}
+.buttons {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+button {
+    width: 80px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: rgb(222, 229, 232);
 }
 .container{
     background-color: floralwhite;
