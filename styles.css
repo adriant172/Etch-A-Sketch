@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:deepskyblue;
+    background-color:skyblue;
 }
 .buttons {
     display: flex;
@@ -23,18 +23,19 @@ button {
     color: rgb(222, 229, 232);
 }
 .container{
-    background-color: floralwhite;
+    background-color: lightgray;
     display: grid;
     grid-template-columns: repeat(16, minmax(0, 1fr));
     grid-template-rows: repeat(16, minmax(0, 1fr));
     height: 900px;
     width: 900px;
-    border: solid crimson 5px;
-    border-radius: 6px;
+    border: solid crimson 20px;
+    border-radius: 8px;
+    border
 }
 .box {
     border: 1px solid black;
 }
-.drawing {
+/* .drawing {
     background-color: aqua;
-}
+} */
