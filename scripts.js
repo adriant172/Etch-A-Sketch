@@ -36,6 +36,12 @@ function createGrid (gridNum) {
     })
 }
 
+function clearGrid () {
+    while (container.firstChild) {
+        container.removeChild(container.lastChild);
+    }   
+}
+
 function randomRGB () {
     let randomRGB = [];
     for (let i = 0; i < 3; i++) {
@@ -44,7 +50,7 @@ function randomRGB () {
     return randomRGB;
 }
 
-
+// Load page with default 16 by 16 grid
 createGrid(16)
 
 const newGridbtn = document.querySelector('.newGrid');
@@ -61,10 +67,8 @@ newGridbtn.addEventListener('click', () => {
     } 
     while (true);
 
-    while (container.firstChild) {
-        container.removeChild(container.lastChild);
-    }
-    
+    clearGrid();
+
     container.style.gridTemplateColumns = `repeat(${newGridNum}, minmax(0, 1fr))`;
     container.style.gridTemplateRows = `repeat(${newGridNum}, minmax(0, 1fr))`;
     createGrid(newGridNum);
