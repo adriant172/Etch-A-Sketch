@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+h1 {
+    font-family: 'Macondo', cursive;
+}
 body {
     display: flex;
     flex-direction: column;
